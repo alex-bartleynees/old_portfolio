@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.header {
+  width: 50%;
+  margin: 10rem auto;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
