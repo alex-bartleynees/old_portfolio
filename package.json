@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:sass": "sass --watch sass/main.scss css/output.css",
     "live-server": "live-server",
-    "start": "npm-run-all watch:sass live-server"
+    "dev": "npm-run-all --parallel live-server watch:sass "
   },
   "repository": {
     "type": "git",

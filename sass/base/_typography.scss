@@ -3,31 +3,44 @@
 
 body {
   font-family: "Mulish", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.7;
+  letter-spacing: 1px;
   color: $color-black;
 }
 
+.navigation-heading {
+  font-size: $default-font-size;
+  font-weight: 600;
+
+  .dot {
+    height: 0.5rem;
+    width: 0.5rem;
+    background-color: #ff0f13;
+    border-radius: 50%;
+    display: inline-block;
+  }
+}
+
 .heading-primary {
-  font-size: 5rem;
-  font-weight: 300;
+  font-size: 4rem;
   border-radius: 3px;
+  max-width: fit-content;
   animation-name: changeColor, textFade;
   white-space: nowrap;
   animation-duration: 3s;
-  //   animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   span {
     color: #ff0f13;
   }
 }
-
 .paragraph {
   border-radius: 3px;
   margin-top: 1rem;
+  max-width: fit-content;
   animation-name: changeColor, textFade;
   white-space: nowrap;
   animation-duration: 3s;
-  //   animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
   font-size: $default-font-size;
-  letter-spacing: 1px;
 }
