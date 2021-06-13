@@ -13,6 +13,12 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin animation-default {
+  animation-name: changeColor, textFade;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
 // MEDIA QUERY MANAGER
 /*
   0 - 600px: Phone

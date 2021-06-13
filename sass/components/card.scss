@@ -1,0 +1,150 @@
+@use "../abstracts/" as *;
+
+.card {
+  position: relative;
+  height: 52rem;
+  width: 100%;
+  border-radius: 3px;
+  box-shadow: $box-shadow-default;
+  overflow: hidden;
+
+  &-row-2 {
+    margin-left: 10rem;
+    width: 34rem;
+
+    @include respond(tab-port) {
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+
+    &--1 {
+      background-image: url(../../img/matchinggame.png);
+    }
+
+    &--2 {
+      background-image: url(../../img/beertasting.png);
+    }
+
+    &--3 {
+      background-image: url(../../img/meditationtracker.png);
+    }
+    &--4 {
+      background-image: url(../../img/midnightmysteries.png);
+    }
+    &--5 {
+      background-image: url(../../img/envy.png);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+    transition: transform 0.5s;
+
+    &:hover {
+      transform: translateY(-1rem);
+    }
+    &:hover::after {
+      transform: translateY(1rem);
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    &-span--1 {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-red-light, 0.85),
+        rgba($color-red-dark, 0.85)
+      );
+    }
+
+    &-span--2 {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-red-light, 0.85),
+        rgba($color-red-dark, 0.85)
+      );
+    }
+
+    &-span--3 {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-red-light, 0.85),
+        rgba($color-red-dark, 0.85)
+      );
+    }
+    &-span--4 {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-red-light, 0.85),
+        rgba($color-red-dark, 0.85)
+      );
+    }
+    &-span--5 {
+      padding: 1rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-red-light, 0.85),
+        rgba($color-red-dark, 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 1px solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+}

@@ -34,3 +34,24 @@
     width: 100%;
   }
 }
+
+@keyframes textFade2 {
+  from {
+    width: 0;
+  }
+  to {
+    max-width: 100%;
+  }
+}
+
+.animation-default {
+  animation-name: changeColor, textFade;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}
+
+.animation-card {
+  animation-name: changeColor, textFade2;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+}

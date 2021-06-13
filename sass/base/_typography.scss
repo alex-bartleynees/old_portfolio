@@ -26,21 +26,14 @@ body {
   font-size: 4rem;
   border-radius: 3px;
   max-width: fit-content;
-  animation-name: changeColor, textFade;
   white-space: nowrap;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
   span {
     color: #ff0f13;
   }
 }
 .paragraph {
   border-radius: 3px;
-  margin-top: 1rem;
   max-width: fit-content;
-  animation-name: changeColor, textFade;
   white-space: nowrap;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
   font-size: $default-font-size;
 }
