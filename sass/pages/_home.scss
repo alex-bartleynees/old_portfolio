@@ -20,6 +20,15 @@
   }
 }
 
+.blog__post {
+  width: 50vw;
+  margin: 0 auto 0 auto;
+
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+
 .footer {
   position: relative;
   padding: 5rem 0 10rem 0;

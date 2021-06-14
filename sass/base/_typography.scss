@@ -74,26 +74,10 @@ body {
   border-radius: 3px;
   max-width: fit-content;
   letter-spacing: 2px;
-  white-space: nowrap;
   font-size: $default-font-size;
 
   @include respond(phone) {
     white-space: normal;
-  }
-
-  &--about {
-    padding-top: 2rem;
-    white-space: unset;
-
-    &--2 {
-      padding-bottom: 2rem;
-    }
-
-    &--3 {
-      padding-top: 2rem;
-      white-space: unset;
-      padding-bottom: 2rem;
-    }
   }
 }
 
@@ -110,4 +94,9 @@ body {
     text-decoration: none;
     color: $color-white;
   }
+}
+
+.link {
+  text-decoration: none;
+  color: $color-black;
 }
