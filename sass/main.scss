@@ -2,9 +2,11 @@
 @use "base/typography";
 
 @use "components/card.scss";
+@use "components/blog-card.scss";
 
 @use "layout/grid.scss";
 @use "layout/header";
 @use "layout/navigation";
+@use "layout/about.scss";
 
 @use "pages/home";

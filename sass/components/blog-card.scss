@@ -1,0 +1,25 @@
+@use "../abstracts/" as *;
+
+.blog-card {
+  position: relative;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 3px;
+  box-shadow: $box-shadow-default;
+  overflow: hidden;
+  background-image: url(../../img/gatsby.jpeg);
+  background-size: cover;
+  margin-right: 20rem;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: all 0.5s;
+  margin: auto;
+  &:hover {
+    transform: scale(1.05);
+    filter: blur(2px);
+  }
+  &:hover::after {
+    transform: scale(1);
+    filter: blur(0px);
+  }
+}

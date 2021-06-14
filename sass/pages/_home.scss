@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+.about {
+  width: 50vw;
+  margin: 0 auto 0 auto;
+}
+
+.blog {
+  position: relative;
+  background-color: $color-grey-light-1;
+  padding: 5rem 0 15rem 0;
+  margin-top: -10rem;
+
+  @include respond(tab-port) {
+    padding: 20rem 0 10rem 0;
+  }
+}
+
+.footer {
+  position: relative;
+  padding: 5rem 0 15rem 0;
+  //   margin-top: -10rem;
+  background-color: $color-black;
+  color: $color-white;
+
+  @include respond(tab-port) {
+    max-width: 100%;
+  }
+}
