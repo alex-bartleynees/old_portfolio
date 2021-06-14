@@ -98,11 +98,11 @@ body {
 }
 
 .footer__heading {
-  font-size: $default-font-size;
+  font-size: 2rem;
 }
 
 .footer__info {
-  font-size: 1rem;
+  font-size: $default-font-size;
   li {
     list-style: none;
   }

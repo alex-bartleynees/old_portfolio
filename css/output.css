@@ -181,11 +181,11 @@ body {
 }
 
 .footer__heading {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 
 .footer__info {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 .footer__info li {
   list-style: none;
