@@ -1,5 +1,4 @@
 @use "../abstracts/" as *;
-@use "animations" as *;
 
 body {
   font-family: "Mulish", sans-serif;
@@ -98,7 +97,12 @@ body {
   }
 }
 
+.footer__heading {
+  font-size: $default-font-size;
+}
+
 .footer__info {
+  font-size: 1rem;
   li {
     list-style: none;
   }

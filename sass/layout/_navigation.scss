@@ -1,4 +1,5 @@
 @use "../abstracts/" as *;
+@use "../base/animations" as *;
 
 .navigation {
   width: 50vw;
@@ -13,33 +14,93 @@
   }
 
   &__button {
-    height: 7rem;
-    width: 7rem;
-    text-align: center;
+    height: 10rem;
+    width: 10rem;
     cursor: pointer;
     position: relative;
     margin-left: 50vw;
     top: -4.8rem;
     text-align: center;
-    max-width: 100vh;
 
     @include respond(phone) {
       margin-left: 85vw;
     }
   }
 
+  &__background {
+    background-color: rgba($color-black, 0.8);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    transition: all 0.3s;
+    opacity: 0;
+    transition: all 0.3s;
+
+    @supports (-webkit-backdrop-filter: blur(1rem)) or
+      (backdrop-filter: blur(1rem)) {
+      -webkit-backdrop-filter: blur(1rem);
+      backdrop-filter: blur(1rem);
+      background-color: rgba($color-black, 0.3);
+    }
+  }
+  &__nav {
+    position: fixed;
+    opacity: 0;
+    right: 0;
+    top: 0;
+  }
+  //FUNCTIONALITY
+
+  &__checkbox:checked ~ &__background {
+    z-index: 5000;
+    opacity: 1;
+    width: 100%;
+  }
+
+  &__checkbox:checked ~ &__nav {
+    opacity: 1;
+    width: 35rem;
+    height: 100%;
+    z-index: 10000;
+    background-color: rgba($color-red-light, 0.5);
+    animation-name: moveInRight;
+    animation-duration: 3s;
+  }
+
+  &__list {
+    list-style: none;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: 3rem;
+  }
+
+  &__item {
+    font-size: 2rem;
+
+    a {
+      text-decoration: none;
+      color: $color-black;
+    }
+  }
+
+  //ICON
   &__icon {
     position: relative;
     margin-top: 3.5rem;
+    z-index: 9000;
 
     &,
     &::before,
     &::after {
       width: 3rem;
       height: 2px;
-      background-color: $color-grey-dark-3;
+      background-color: $color-black;
       display: inline-block;
     }
+
     &::before,
     &::after {
       content: "";
@@ -65,6 +126,10 @@
   }
 
   &__checkbox:checked + &__button &__icon {
+    position: fixed;
+    right: 0;
+    margin-right: 1rem;
+    z-index: 15000;
     background-color: transparent;
   }
 
