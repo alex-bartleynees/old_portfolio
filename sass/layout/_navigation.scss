@@ -21,6 +21,7 @@
     margin-left: 50vw;
     top: -4.8rem;
     text-align: center;
+    z-index: 6000;
 
     @include respond(phone) {
       margin-left: 85vw;
@@ -64,7 +65,7 @@
     opacity: 1;
     width: 35rem;
     height: 100%;
-    z-index: 10000;
+    z-index: 5000;
     background-color: rgba($color-red-light, 0.5);
     animation-name: moveInRight;
     animation-duration: 3s;
@@ -124,7 +125,6 @@
     position: fixed;
     right: 0;
     margin-right: 1rem;
-    z-index: 15000;
     background-color: transparent;
   }
 
