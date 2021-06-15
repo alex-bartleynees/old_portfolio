@@ -126,6 +126,7 @@
     background-color: transparent;
 
     @include respond(phone) {
+      top: 0;
       margin-right: 3.5rem;
     }
   }
