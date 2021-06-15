@@ -78,6 +78,10 @@
   padding-bottom: 2rem;
 }
 
+.z-index-high {
+  z-index: 200000;
+}
+
 *,
 *::after,
 *::before {
@@ -688,4 +692,4 @@ body {
   width: 100%;
 }
 
-/*# sourceMappingURL=style.comp.css.map */
+/*# sourceMappingURL=output.css.map */
