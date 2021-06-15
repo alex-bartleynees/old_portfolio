@@ -31,14 +31,12 @@
   &__background {
     background-color: rgba($color-black, 0.8);
     height: 100vh;
-    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 0;
     transition: all 0.3s;
     opacity: 0;
-    transition: all 0.3s;
 
     @supports (-webkit-backdrop-filter: blur(1rem)) or
       (backdrop-filter: blur(1rem)) {
@@ -84,7 +82,7 @@
 
   //ICON
   &__icon {
-    position: relative;
+    position: absolute;
     margin-top: 3.5rem;
     z-index: 9000;
 
@@ -126,6 +124,10 @@
     right: 0;
     margin-right: 1rem;
     background-color: transparent;
+
+    @include respond(phone) {
+      margin-right: 7rem;
+    }
   }
 
   &__checkbox:checked + &__button &__icon::before {

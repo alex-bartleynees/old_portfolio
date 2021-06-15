@@ -1,0 +1,13 @@
+@use "../abstracts/" as *;
+
+.blog__post {
+  &--photo--1 {
+    height: 50%;
+    width: 50%;
+  }
+
+  &--photo--2 {
+    height: 100%;
+    width: 100%;
+  }
+}

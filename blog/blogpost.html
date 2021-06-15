@@ -16,8 +16,7 @@
   <body>
     <div class="navigation">
       <p class="navigation-heading">
-        <a class="link" href="/index.html">alex-bartleynees</a>
-        <span class="dot"></span>
+        alex-bartleynees <span class="dot"></span>
       </p>
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
@@ -28,14 +27,19 @@
       <div class="navigation__background">&nbsp;</div>
 
       <nav class="navigation__nav">
-        <label for="navi-toggle" class="navigation__button">
-          <span class="navigation__icon">&nbsp;</span>
-        </label>
         <ul class="navigation__list">
-          <li class="navigation__item"><a href="#home">Home</a></li>
-          <li class="navigation__item"><a href="#projects">Projects</a></li>
-          <li class="navigation__item"><a href="#aboutme">About Me</a></li>
-          <li class="navigation__item"><a href="#blog">Blog</a></li>
+          <li class="navigation__item">
+            <a class="link" href="/index.html">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link" href="/index.html#projects">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link" href="/index.html#aboutme">About Me</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link" href="/index.html#blog">Blog</a>
+          </li>
         </ul>
       </nav>
     </div>
@@ -47,13 +51,99 @@
           June 15th 2021 by Alex Bartley Nees
         </h2>
         <p class="paragraph">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
-          incidunt eveniet, esse, alias eligendi, soluta libero nostrum in iste
-          officiis aliquam repellat aperiam exercitationem expedita quisquam
-          totam enim cumque molestias! Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Maiores ipsa adipisci odit accusantium soluta in
-          porro debitis distinctio ullam voluptatum consequuntur totam incidunt,
-          consequatur illum animi exercitationem tempora consectetur deleniti?
+          I recently finished making a website for my brother’s new art gallery
+          in Wellington. A major requirement for the website was that he needed
+          to be able to update everything himself without touching the code or
+          asking me for help. This was because he would have a new art
+          exhibition each month and needed to be easily able to add it to the
+          website. I had never made a website with this functionality before,
+          but I felt up to the challenge.
+        </p>
+        <p class="paragraph u-margin-top-medium">
+          After doing some research online, I decided to use Sanity Studio as a
+          headless CMS to update the content on the website. A headless CMS is a
+          back-end only content management system. A headless CMS was ideal
+          because I could use it with my front-end of choice, in this case,
+          Gatsby, a static site generator based on React. Getting started with
+          Sanity was easy because they provide a command-line interface tool
+          that makes it easy to start and deploy a project. A great thing about
+          Sanity is that everything is easily customisable because it is built
+          on React. All the content in Sanity is defined by “schemas” which are
+          javascript objects and arrays. In this case, I set up the schemas to
+          add new exhibitions with as many artists and artworks as my brother
+          needed. I simply used a boolean to define whether the exhibition was
+          either the current or upcoming exhibition, or if it should be placed
+          in the archive. Once the schema is set up you simply need to type
+          “sanity deploy” in the terminal and follow the instructions to deploy
+          it to the web.
+        </p>
+
+        <div class="row u-margin-top-big">
+          <div class="col-1-of-2">
+            <div class="card">
+              <div class="card__picture--blog card__picture--blog-1">
+                &nbsp;
+              </div>
+              <p class="paragraph">Example of Sanity Studio schema</p>
+            </div>
+          </div>
+
+          <div class="col-1-of-2">
+            <div class="card">
+              <div class="card__picture--blog card__picture--blog-2">
+                &nbsp;
+              </div>
+              <p class="paragraph">Example exhibition in Sanity Studio</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="paragraph">
+          With Sanity Studio and the schemas set up, I next set about getting
+          the data into Gatsby and displaying it on the page. Gatsby is a static
+          site generator built on React. It’s static because you can run “npm
+          run build” and it outputs a bunch of HTML files but because it is
+          based on React it can also have lots of dynamic functionality. I went
+          with Gatsby for this site because the website was mainly static, with
+          a new exhibition only being added once a month and Gatsby has the
+          speed of React and single-page web apps while having the advantages of
+          search engine optimisation. With React, it can be harder to optimise
+          for search engines but all of the javascript has to be run on the
+          client-side before the search engine can know what is on the page.
+          Gatsby is server-side rendered which makes the content immediately
+          available to search engine crawlers. This seemed like a great choice
+          for this website.
+        </p>
+
+        <p class="paragraph u-margin-top-medium">
+          Gatsby uses GraphQL to access data. GraphQL uses queries to get the
+          particular data you need. The first step was to run “sanity deploy
+          graphQL” to make the schema available to GraphQl to query. The next
+          step was to write the queries to access the data from the Sanity
+          Studio. In Gatsby, you can have one query per component. Gatsby makes
+          it really easy to write queries by having a tool called “GraphiQL”
+          which lets you see the structure of your data in your browser and
+          easily run queries which you can then copy into Gatsby.
+        </p>
+
+        <div class="row u-margin-top-big">
+          <div class="col-1-of-2">
+            <div class="card">
+              <div class="card__picture--blog card__picture--blog-3">
+                &nbsp;
+              </div>
+              <p class="paragraph">Query in Gatsby</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="paragraph u-margin-top-medium">
+          Once GraphQL gets the data into Gatsby, it was simply a matter of
+          using javascript object and array methods to display the data on the
+          page! See the end result here! &rarr;
+          <a class="link z-index-high" href="https://envy6011.netlify.app/"
+            >Envy 6011</a
+          >
         </p>
       </section>
     </main>

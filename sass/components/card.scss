@@ -42,6 +42,26 @@
     &--5 {
       background-image: url(../../img/envy.png);
     }
+
+    &--blog {
+      background-size: cover;
+      height: 47rem;
+      background-blend-mode: screen;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+
+      &-1 {
+        background-image: url(../../img/schema.png);
+      }
+
+      &-2 {
+        background-image: url(../../img/studio.png);
+      }
+
+      &-3 {
+        background-image: url(../../img/gatsbyquery.png);
+      }
+    }
   }
 
   &__heading {
