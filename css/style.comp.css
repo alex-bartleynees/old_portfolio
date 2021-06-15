@@ -616,6 +616,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__checkbox:checked + .navigation__button .navigation__icon {
+    top: 0;
     margin-right: 3.5rem;
   }
 }
