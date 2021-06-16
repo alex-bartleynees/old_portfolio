@@ -523,8 +523,8 @@ body {
   display: none;
 }
 .navigation__button {
-  height: 10rem;
-  width: 10rem;
+  height: 6rem;
+  width: 6rem;
   cursor: pointer;
   position: absolute;
   margin-left: 50vw;
@@ -540,7 +540,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__button {
-    margin-left: 55vw;
+    margin-left: 60vw;
   }
 }
 .navigation__background {
@@ -588,6 +588,9 @@ body {
 }
 .navigation__item {
   font-size: 2rem;
+}
+.navigation__item a {
+  z-index: 7000;
 }
 .navigation__icon {
   position: absolute;
