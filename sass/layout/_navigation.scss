@@ -17,14 +17,19 @@
     height: 10rem;
     width: 10rem;
     cursor: pointer;
-    position: relative;
+    position: absolute;
     margin-left: 50vw;
-    top: -4.8rem;
+    top: 0.5rem;
+    left: 22vw;
     text-align: center;
     z-index: 6000;
 
+    @include respond(tab-port) {
+      top: -1rem;
+    }
+
     @include respond(phone) {
-      margin-left: 85vw;
+      margin-left: 55vw;
     }
   }
 

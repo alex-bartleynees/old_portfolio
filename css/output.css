@@ -526,15 +526,21 @@ body {
   height: 10rem;
   width: 10rem;
   cursor: pointer;
-  position: relative;
+  position: absolute;
   margin-left: 50vw;
-  top: -4.8rem;
+  top: 0.5rem;
+  left: 22vw;
   text-align: center;
   z-index: 6000;
 }
+@media only screen and (max-width: 56.25em) {
+  .navigation__button {
+    top: -1rem;
+  }
+}
 @media only screen and (max-width: 37.5em) {
   .navigation__button {
-    margin-left: 85vw;
+    margin-left: 55vw;
   }
 }
 .navigation__background {
