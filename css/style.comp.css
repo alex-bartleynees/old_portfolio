@@ -229,16 +229,6 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
-.card-row-2 {
-  margin-left: 10rem;
-  width: 34rem;
-}
-@media only screen and (max-width: 56.25em) {
-  .card-row-2 {
-    width: 100%;
-    margin-left: 0;
-  }
-}
 .card__picture {
   background-size: cover;
   height: 23rem;
@@ -260,6 +250,9 @@ body {
 }
 .card__picture--5 {
   background-image: url(../../img/envy.png);
+}
+.card__picture--6 {
+  background-image: url(../../img/artstable.png);
 }
 .card__picture--blog {
   background-size: cover;

@@ -1,258 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="css/main.min.css" />
-  <title>Portfolio</title>
-</head>
-
-<body>
-  <div class="navigation">
-    <p class="navigation-heading">
-      alex-bartleynees<span class="dot"></span>
-    </p>
-    <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
-
-    <label for="navi-toggle" class="navigation__button">
-      <span class="navigation__icon">&nbsp;</span>
-    </label>
-
-    <div class="navigation__background">&nbsp;</div>
-
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a class="link" href="#home">Home</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link" href="#projects">Projects</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link" href="#aboutme">About Me</a>
-        </li>
-        <li class="navigation__item">
-          <a class="link" href="#blog">Blog</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-  <header class="header" id="home">
-    <div class="header__text-box">
-      <h1 class="heading-primary animation-default" id="alex-bartleynees">
-        Hey! I'm <strong>Alex</strong><span>.</span>
-      </h1>
-      <p class="paragraph nowrap u-margin-top-small animation-default">
-        A software developer enthused about crafting beautiful code.
+  <body>
+    <div class="navigation">
+      <p class="navigation-heading">
+        alex-bartleynees<span class="dot"></span>
       </p>
-    </div>
-  </header>
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-  <main>
-    <div class="row u-margin-top-huge" id="projects">
-      <div class="col-1-of-3">
-        <div class="card animation-card">
-          <div class="card__picture card__picture--1">&nbsp;</div>
-          <h2 class="card__heading" id="matchinggame">
-            <a href="https://alex-bartleynees.github.io/Matching-game/"><span
-                class="card__heading-span card__heading-span--1">Matching Game</span>
-            </a>
-          </h2>
-          <div class="card__details">
-            <ul>
-              <li>Tech Used:</li>
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>Javascript</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-1-of-3">
-        <div class="card animation-card">
-          <div class="card__picture card__picture--2">&nbsp;</div>
-          <h2 class="card__heading" id="beertastingnotes">
-            <a href="https://beer-tasting-notes.herokuapp.com/"><span
-                class="card__heading-span card__heading-span--2">Beer Tasting Notes</span>
-            </a>
-          </h2>
-          <div class="card__details">
-            <ul>
-              <li>Tech Used:</li>
-              <li>Bulma</li>
-              <li>Handlebars</li>
-              <li>Node.js</li>
-              <li>SQLite3</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="col-1-of-3">
-        <div class="card animation-card">
-          <div class="card__picture card__picture--3">&nbsp;</div>
-          <h2 class="card__heading" id="meditationtracker">
-            <a href="https://meditationtracker.herokuapp.com/"><span
-                class="card__heading-span card__heading-span--3">Meditation Tracker</span>
-            </a>
-          </h2>
-          <div class="card__details">
-            <ul>
-              <li>Tech Used:</li>
-              <li>React/Redux</li>
-              <li>Node.js</li>
-              <li>SQLite3</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-1-of-2">
-        <div class="card card-row-2 animation-card">
-          <div class="card__picture card__picture--4">&nbsp;</div>
-          <h2 class="card__heading" id="midnightmysteries">
-            <a href="https://midnight-mysteries.herokuapp.com/">
-              <span class="card__heading-span card__heading-span--4">Midnight Mysteries</span>
-            </a>
-          </h2>
-          <div class="card__details">
-            <ul>
-              <li>Final group project at Dev Academy</li>
-              <li>Tech Used:</li>
-              <li>React/Redux</li>
-              <li>Websockets</li>
-              <li>Node.js</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
 
-      <div class="col-1-of-2">
-        <div class="card card-row-2 animation-card">
-          <div class="card__picture card__picture--5">&nbsp;</div>
-          <h2 class="card__heading" id="envy">
-            <a href="https://envy6011.net/"><span class="card__heading-span card__heading-span--5">Envy6011</span>
-            </a>
-          </h2>
-          <div class="card__details">
-            <ul>
-              <li>Tech Used:</li>
-              <li>Gatsby</li>
-              <li>Sanity.io</li>
-              <li>CSS modules</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="link" href="#home">Home</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link" href="#projects">Projects</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link" href="#aboutme">About Me</a>
+          </li>
+          <li class="navigation__item">
+            <a class="link" href="#blog">Blog</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <section class="about" id="aboutme">
-      <div class="row">
-        <h3 class="heading-tertiary">About</h3>
-        <p class="paragraph paragraph padding-top-2">
-          I'm a software developer with skills in HTML, CSS, Javascript,
-          React/Redux, Express.js
-        </p>
-        <p class="paragraph paragraph padding-bottom-2">
-          and Node.js and take pride and pleasure in crafting beautiful code.
+    <header class="header" id="home">
+      <div class="header__text-box">
+        <h1 class="heading-primary animation-default" id="alex-bartleynees">
+          Hey! I'm <strong>Alex</strong><span>.</span>
+        </h1>
+        <p class="paragraph nowrap u-margin-top-small animation-default">
+          A software developer enthused about crafting beautiful code.
         </p>
       </div>
-      <div class="row">
-        <div class="col-1-of-2">
-          <div class="about__photo">
-            <img class="about__img" src="/img/alex.jpg" alt="" />
-          </div>
-        </div>
-        <div class="col-1-of-2">
-          <div class="about__bio">
-            <h4 class="heading-4">Bio</h4>
-            <p class="paragraph paragraph padding-top-2 padding-bottom-2">
-              I previously worked as a brewer before deciding to change
-              careers and went back to university to pursue a degree in
-              Philosophy where I discovered a passion for problem-solving,
-              logic and creative thinking. My interest in problem solving and
-              logic led me to software development and I made the decision to
-              study at Enspiral Dev Academy where I learnt the foundations of
-              web development.
-            </p>
+    </header>
 
-            <p class="paragraph">
-              <a class="link underline" target="_blank" href="/img/AlexanderBartleyNeesCV.pdf">Resume</a>
-            </p>
+    <main>
+      <div class="row u-margin-top-huge" id="projects">
+        <div class="col-1-of-3">
+          <div class="card animation-card">
+            <div class="card__picture card__picture--1">&nbsp;</div>
+            <h2 class="card__heading" id="matchinggame">
+              <a href="https://alex-bartleynees.github.io/Matching-game/"
+                ><span class="card__heading-span card__heading-span--1"
+                  >Matching Game</span
+                >
+              </a>
+            </h2>
+            <div class="card__details">
+              <ul>
+                <li>Tech Used:</li>
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="blog u-margin-top-huge" id="blog">
-      <div class="u-center-text">
-        <h3 class="heading-tertiary">Blog Posts</h3>
-        <h4 class="heading-4 heading-4-blog u-margin-bottom-medium">
-          News & Updates
-        </h4>
+        <div class="col-1-of-3">
+          <div class="card animation-card">
+            <div class="card__picture card__picture--2">&nbsp;</div>
+            <h2 class="card__heading" id="beertastingnotes">
+              <a href="https://beer-tasting-notes.herokuapp.com/"
+                ><span class="card__heading-span card__heading-span--2"
+                  >Beer Tasting Notes</span
+                >
+              </a>
+            </h2>
+            <div class="card__details">
+              <ul>
+                <li>Tech Used:</li>
+                <li>Bulma</li>
+                <li>Handlebars</li>
+                <li>Node.js</li>
+                <li>SQLite3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card animation-card">
+            <div class="card__picture card__picture--3">&nbsp;</div>
+            <h2 class="card__heading" id="meditationtracker">
+              <a href="https://meditationtracker.herokuapp.com/"
+                ><span class="card__heading-span card__heading-span--3"
+                  >Meditation Tracker</span
+                >
+              </a>
+            </h2>
+            <div class="card__details">
+              <ul>
+                <li>Tech Used:</li>
+                <li>React/Redux</li>
+                <li>Node.js</li>
+                <li>SQLite3</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="row">
-        <a href="/blog/blogpost.html">
-          <div class="blog-card">&nbsp;</div>
-        </a>
-        <div class="blog__info">
-          <h5 class="blog__info--title">Gatsby and Sanity.io</h5>
-          <h6 class="blog__info--date-author">
-            June 15th, 2021 by
-            <span class="blog__info--date-author blog__info--date-author-span">Alex Bartley Nees</span>
-          </h6>
-        </div>
-      </div>
-    </section>
-    <section class="footer u-center-text">
-      <div class="row u-margin-bottom-small">
         <div class="col-1-of-3">
-          <div class="footer__heading u-margin-bottom-small">Home</div>
-          <div class="footer__info">
-            <ul>
-              <li><a href="#alex-bartleynees">alex-bartleynees</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#aboutme">About Me</a></li>
-              <li><a href="#blog">Blog</a></li>
-            </ul>
+          <div class="card animation-card">
+            <div class="card__picture card__picture--4">&nbsp;</div>
+            <h2 class="card__heading" id="midnightmysteries">
+              <a href="https://midnight-mysteries.herokuapp.com/">
+                <span class="card__heading-span card__heading-span--4"
+                  >Midnight Mysteries</span
+                >
+              </a>
+            </h2>
+            <div class="card__details">
+              <ul>
+                <li>Final group project at Dev Academy</li>
+                <li>Tech Used:</li>
+                <li>React/Redux</li>
+                <li>Websockets</li>
+                <li>Node.js</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="col-1-of-3">
-          <div class="footer__heading u-margin-bottom-small">Projects</div>
-          <div class="footer__info">
-            <ul>
-              <li><a href="#matchinggame">Matching Game</a></li>
-              <li><a href="#beertastingnotes">Beer Tasting Notes</a></li>
-              <li><a href="#meditationtracker">Meditation Tracker</a></li>
-              <li><a href="#midnightmysteries">Midnight Mysteries</a></li>
-              <li><a href="#envy">Envy6011</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-1-of-3">
-          <div class="footer__heading u-margin-bottom-small">Contact</div>
-          <div class="footer__info">
-            <ul>
-              <li>
-                <a href="mailto:alexbartleynees@gmail.com">alexbartleynees@gmail.com</a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/alex-bartley-nees/">Linked In</a>
-              </li>
-              <li>
-                <a href="https://github.com/alex-bartleynees">Github</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-</body>
 
+        <div class="col-1-of-3">
+          <div class="card animation-card">
+            <div class="card__picture card__picture--5">&nbsp;</div>
+            <h2 class="card__heading" id="envy">
+              <a href="https://envy6011.net/"
+                ><span class="card__heading-span card__heading-span--5"
+                  >Envy6011</span
+                >
+              </a>
+            </h2>
+            <div class="card__details">
+              <ul>
+                <li>Tech Used:</li>
+                <li>Gatsby</li>
+                <li>Sanity.io</li>
+                <li>CSS modules</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div class="card animation-card">
+            <div class="card__picture card__picture--6">&nbsp;</div>
+            <h2 class="card__heading" id="artstable">
+              <a href="https://artstable.netlify.app/"
+                ><span class="card__heading-span card__heading-span--5"
+                  >Art Stable</span
+                >
+              </a>
+            </h2>
+            <div class="card__details">
+              <ul>
+                <li>Tech Used:</li>
+                <li>HTML5/CSS (SASS)</li>
+                <li>Flexbox/CSS Grid</li>
+                <li>Javascript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="about" id="aboutme">
+        <div class="row">
+          <h3 class="heading-tertiary">About</h3>
+          <p class="paragraph paragraph padding-top-2">
+            I'm a software developer with skills in HTML, CSS, Javascript,
+            React/Redux, Express.js
+          </p>
+          <p class="paragraph paragraph padding-bottom-2">
+            and Node.js and take pride and pleasure in crafting beautiful code.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-1-of-2">
+            <div class="about__photo">
+              <img class="about__img" src="/img/alex.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-1-of-2">
+            <div class="about__bio">
+              <h4 class="heading-4">Bio</h4>
+              <p class="paragraph paragraph padding-top-2 padding-bottom-2">
+                I previously worked as a brewer before deciding to change
+                careers and went back to university to pursue a degree in
+                Philosophy where I discovered a passion for problem-solving,
+                logic and creative thinking. My interest in problem solving and
+                logic led me to software development and I made the decision to
+                study at Enspiral Dev Academy where I learnt the foundations of
+                web development.
+              </p>
+
+              <p class="paragraph">
+                <a
+                  class="link underline"
+                  target="_blank"
+                  href="/img/AlexanderBartleyNeesCV.pdf"
+                  >Resume</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog u-margin-top-huge" id="blog">
+        <div class="u-center-text">
+          <h3 class="heading-tertiary">Blog Posts</h3>
+          <h4 class="heading-4 heading-4-blog u-margin-bottom-medium">
+            News & Updates
+          </h4>
+        </div>
+        <div class="row">
+          <a href="/blog/blogpost.html">
+            <div class="blog-card">&nbsp;</div>
+          </a>
+          <div class="blog__info">
+            <h5 class="blog__info--title">Gatsby and Sanity.io</h5>
+            <h6 class="blog__info--date-author">
+              June 15th, 2021 by
+              <span class="blog__info--date-author blog__info--date-author-span"
+                >Alex Bartley Nees</span
+              >
+            </h6>
+          </div>
+        </div>
+      </section>
+      <section class="footer u-center-text">
+        <div class="row u-margin-bottom-small">
+          <div class="col-1-of-3">
+            <div class="footer__heading u-margin-bottom-small">Home</div>
+            <div class="footer__info">
+              <ul>
+                <li><a href="#alex-bartleynees">alex-bartleynees</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#aboutme">About Me</a></li>
+                <li><a href="#blog">Blog</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="footer__heading u-margin-bottom-small">Projects</div>
+            <div class="footer__info">
+              <ul>
+                <li><a href="#matchinggame">Matching Game</a></li>
+                <li><a href="#beertastingnotes">Beer Tasting Notes</a></li>
+                <li><a href="#meditationtracker">Meditation Tracker</a></li>
+                <li><a href="#midnightmysteries">Midnight Mysteries</a></li>
+                <li><a href="#envy">Envy6011</a></li>
+                <li><a href="#artstable">Art Stable</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-1-of-3">
+            <div class="footer__heading u-margin-bottom-small">Contact</div>
+            <div class="footer__info">
+              <ul>
+                <li>
+                  <a href="mailto:alexbartleynees@gmail.com"
+                    >alexbartleynees@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/in/alex-bartley-nees/"
+                    >Linked In</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/alex-bartleynees">Github</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

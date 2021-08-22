@@ -8,16 +8,6 @@
   box-shadow: $box-shadow-default;
   overflow: hidden;
 
-  &-row-2 {
-    margin-left: 10rem;
-    width: 34rem;
-
-    @include respond(tab-port) {
-      width: 100%;
-      margin-left: 0;
-    }
-  }
-
   &__picture {
     background-size: cover;
     height: 23rem;
@@ -41,6 +31,10 @@
     }
     &--5 {
       background-image: url(../../img/envy.png);
+    }
+
+    &--6 {
+      background-image: url(../../img/artstable.png);
     }
 
     &--blog {
