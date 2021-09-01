@@ -71,7 +71,7 @@
     z-index: 5000;
     background-color: rgba($color-red-light, 0.5);
     animation-name: moveInRight;
-    animation-duration: 3s;
+    animation-duration: 1s;
 
     @include respond(phone) {
       width: 25rem;
