@@ -240,10 +240,10 @@ body {
   background-image: url(../../img/matchinggame.png);
 }
 .card__picture--2 {
-  background-image: url(../../img/beertasting.png);
+  background-image: url(../../img/product-feedback.png);
 }
 .card__picture--3 {
-  background-image: url(../../img/meditationtracker.png);
+  background-image: url(../../img/calculatorapp.png);
 }
 .card__picture--4 {
   background-image: url(../../img/midnightmysteries.png);
@@ -571,7 +571,7 @@ body {
   z-index: 5000;
   background-color: rgba(220, 20, 60, 0.5);
   animation-name: moveInRight;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__checkbox:checked ~ .navigation__nav {

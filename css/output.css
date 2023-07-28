@@ -229,16 +229,6 @@ body {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
-.card-row-2 {
-  margin-left: 10rem;
-  width: 34rem;
-}
-@media only screen and (max-width: 56.25em) {
-  .card-row-2 {
-    width: 100%;
-    margin-left: 0;
-  }
-}
 .card__picture {
   background-size: cover;
   height: 23rem;
@@ -250,16 +240,19 @@ body {
   background-image: url(../../img/matchinggame.png);
 }
 .card__picture--2 {
-  background-image: url(../../img/beertasting.png);
+  background-image: url(../../img/product-feedback.png);
 }
 .card__picture--3 {
-  background-image: url(../../img/meditationtracker.png);
+  background-image: url(../../img/calculatorapp.png);
 }
 .card__picture--4 {
   background-image: url(../../img/midnightmysteries.png);
 }
 .card__picture--5 {
   background-image: url(../../img/envy.png);
+}
+.card__picture--6 {
+  background-image: url(../../img/artstable.png);
 }
 .card__picture--blog {
   background-size: cover;
@@ -578,7 +571,7 @@ body {
   z-index: 5000;
   background-color: rgba(220, 20, 60, 0.5);
   animation-name: moveInRight;
-  animation-duration: 3s;
+  animation-duration: 1s;
 }
 @media only screen and (max-width: 37.5em) {
   .navigation__checkbox:checked ~ .navigation__nav {
